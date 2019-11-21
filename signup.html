@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/signup.js"></script>
+  </head>
+  <body>
+    <div class="login-wrap">
+
+
+    <div class="login-html">
+      <label class="sign-up tab">SIGN UP</label>
+      <label class="sign-up tab"><a href="signin.html">SIGN IN</a></label>
+
+
+
+      <form class="login-form" action="index.html" method="post">
+
+        <div class="group">
+            <label for="name" class="label">Name</label>
+            <input id="name" name="uname" type="text" class="input" value="" required="" pattern="[A-z0-9À-ž]+-?[A-z0-9À-ž]+" title="Name doesn&#39;t follow the pattern. Only latin letters are allowed.">
+        </div>
+
+        <div class="group">
+            <label for="password" class="label" id="passwordLabel">Password</label>
+            <input id="password" name="pwd" type="password" class="input" data-type="password" required="" minlength="6">
+        </div>
+
+
+        <div class="group">
+            <label for="password-confirm" class="label">Repeat Password</label>
+            <input id="password-confirm" name="password-confirm" type="password" class="input" data-type="password" required="" minlength="6" onblur="checkPasswd();">
+        </div>
+        <div id="repeat-passwd-notice"style="display:none;height:20px;width:200px;color:red;font-size:5px;">
+            请输入相同的密码！
+        </div>
+        <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+        </div>
+      </form>
+    </div>
+
+    </div>
+  </body>
+</html>
