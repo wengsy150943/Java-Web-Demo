@@ -9,13 +9,20 @@
   <body>
 
 
-    <div name="body" style="float:left;height:100%;width:100%;"class="">
+    <div name="body" class="body">
       <div class="head-tab">
       <!--  <div name="account"> -->
           <button type="button" name="button" class="button" style="margin-left:auto;">LOGOUT</button>
       <!--  </div> -->
 
       </div>
+      <div class="select-box">
+        <button id="overturn"value="SHOWTAG"type="button" name="button" class="button" onclick="overturnTag('tag','overturn')">SHOWTAG</button>
+      </div>
+    <div id="tag" style="display:none;">
+
+
+
 
       <div class="select-box" name="country" id="countryBox">
         <button type="button" name="button" class="button" onclick="getTag('country');" style="margin-top:10px;">COUNTRY</button>
@@ -45,6 +52,8 @@
         <button type="button" name="button" class="button" onclick="getTag('scale');" style="margin-top:10px;">SCALE</button>
         <div id="scale" ></div>
       </div>
+
+    </div>
 
       <div>
         <form action="" method="post" class="select-box">

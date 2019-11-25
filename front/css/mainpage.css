@@ -4,7 +4,15 @@ body{
 	background:rgba(200,200,200,1);
 /*	font:600 16px/18px 'Open Sans',sans-serif;*/
 }
+.body{
+	width:100%;
+/*	max-width:800px;*/
+	margin: auto;
+	height:100%;
+/*	padding:0px 70px 50px 70px;*/
+	background:rgba(0,0,0,.7);
 
+}
 .head-tab{
   display: flex;
 	background-color: rgba(10,10,10,.8);

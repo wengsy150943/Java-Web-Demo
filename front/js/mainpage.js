@@ -24,3 +24,18 @@ function changeColor(tagId){
   else   tag.style.backgroundColor="blue";
 //  alert("//"+str+"//");
 }
+
+function overturnTag(str1,str2){
+  var target=document.getElementById(str1);
+  var button=document.getElementById(str2);
+//  alert(str2);
+
+  if(target.style.display=="block"){
+    target.style.display="none";
+    button.innerHTML="SHOWTAG";
+  }
+  else{
+     target.style.display="block";
+     button.innerHTML="HIDETAG";
+  }
+}
