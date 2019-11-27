@@ -1,4 +1,3 @@
-
 function getTag(name){
   var tag = new Array("china","america","england");
   //tag = {};//needed
