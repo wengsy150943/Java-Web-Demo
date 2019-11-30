@@ -132,10 +132,17 @@ a {
 }
 
 .login-form .group .button {
-	background: rgba(180, 180, 180, .9) !important;
-	border: 3px solid rgba(255, 255, 255, .3) !important;
+	background: rgba(10, 10, 10, .5) !important;
+/*	border: 3px solid rgba(255, 255, 255, .3) !important;*/
 	cursor: pointer;
+	color:silver;
 }
+
+.login-form input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+        }
 
 .hr {
 	height: 2px;
@@ -290,6 +297,7 @@ a {
 	padding-left:35px;
 }
 
+.box{height:15px;}
 
 .wel-info{height:32px; line-height:32px; padding-bottom:8px;color:black;}
 .wel-info span{float:left;}
@@ -298,6 +306,9 @@ a {
 .wel-info a:hover{color:#000;}
 .wel-info i{font-style:normal; padding-left:8px;}
 
+.ibox{clear:both; padding-left:40px;color:black; padding-top:18px; overflow:hidden; padding-bottom:18px;}
+.ibtn{background:url(../images/ibtnbg.png) repeat-x;border:solid 1px #bfcfe1; height:23px; line-height:23px; display:block; float:left; padding:0 15px; cursor:pointer;}
+.ibtn img{margin-top:5px; float:left; padding-right:7px;}
 
 .info-list{padding-left:40px; padding-bottom:15px;color:black;}
 .info-list li{ line-height:23px; height:23px; margin-bottom:8px;}
@@ -307,5 +318,5 @@ a {
 
 .xline{border-bottom:solid 1px #EADCC8; height:5px;margin:10px 10px;}
 
-.um-list{padding-left:40px;}
-.um-list li{float:left; background:url(../images/ulist.png) no-repeat 0 5px; padding-left:10px; margin-right:15px;}
+.um-list{padding-left:40px;color:black;}
+.um-list li{float:left; background:url(../images/ulist.png) no-repeat 0 5px; padding-left:10px; margin-right:20px;}

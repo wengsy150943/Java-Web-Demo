@@ -10,12 +10,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href="css/mainpage.css" rel="stylesheet" type="text/css" />
 
 <script language="JavaScript" src="js/jquery.js"></script>
 <script type="text/javascript">
-$(function(){
+$(function(){	
 	//顶部导航切换
 	$(".nav li a").click(function(){
 		$(".nav li a.selected").removeClass("selected")
@@ -28,9 +29,9 @@ $(function(){
 			window.top.location.href="user?oper=out";
 		}
 	})
-
-
-})
+	
+	
+})	
 </script>
 
 
@@ -38,18 +39,18 @@ $(function(){
 
 <body style="background-color:black;">
 
-
-
+    
+            
     <button class="button" onclick="$()" style="float:right;height:70px;line-height:70px;width:100px;color:white;font-size:18px;">
     	退出
     </button>
-
-
-
+    
+    
+     
     <div class="button" style="float:right;height:70px;line-height:70px;width:auto;color:white;font-size:18px;">
     	这里需要返回当前用户名
-    </div>
-
+    </div>    
+    
     </div>
 
 </body>
