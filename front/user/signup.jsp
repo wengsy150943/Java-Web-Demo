@@ -9,16 +9,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <meta charset="utf-8">
     <title>signup</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/signup.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/signup.js"></script>
   </head>
-<body style="background: url('img/0.jpeg') no-repeat center;background-size:cover;">
+<body style="background: url('../img/0.jpeg') no-repeat center;background-size:cover;">
     <div class="login-wrap">
 
 
     <div class="login-html">
       <label class="sign-up tab">SIGN UP</label>
-      <label class="sign-up tab"><a href="signin.html">SIGN IN</a></label>
 
 
 

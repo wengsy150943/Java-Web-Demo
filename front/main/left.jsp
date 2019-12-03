@@ -64,7 +64,7 @@ $(function(){
     </div>
     	<ul class="menu-son">
         <li><cite></cite><a href="user/userInfo.jsp" target="rightFrame">查看个人信息</a></li>
-         <li><cite></cite><a href="user/pwd.jsp" target="rightFrame">修改密码</a></li>
+         <li><cite></cite><a href="user/reg.jsp" target="body">修改密码</a></li>
         </ul>    
     </div>
 	   <div class="group" style="line-height: 35px;	font-weight: bold;	font-size: 14px;">
@@ -75,6 +75,17 @@ $(function(){
 	        <li><cite></cite><a href="user?oper=show" target="rightFrame">查看用户信息</a><i></i></li>
 	        </ul>    
 	    </div>
+	    
+	    
+	    <div class="group" style="line-height: 35px;	font-weight: bold;	font-size: 14px;">
+	    <div class="title">
+	    <span><img src="images/leftico01.png" /></span>管理信息
+	    </div>
+	    	
+    	<ul class="menu-son">
+        <li><cite></cite><a href="doImages/addImage.jsp" target="rightFrame">图片上传</a><i></i></li>
+        <li><cite></cite><a href="doImages/watchImage.jsp" target="rightFrame">图片查找</a><i></i></li>
+        </ul>    
     </dl>
 </body>
 </html>

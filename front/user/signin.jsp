@@ -55,10 +55,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>欢迎登录后台管理系统</title>
-<script language="JavaScript" src="js/jquery.js"></script>
-<script src="js/cloud.js" type="text/javascript"></script>
+<script language="JavaScript" src="../js/jquery.js"></script>
+<script src="../js/cloud.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/styles.css">
-<script src="js/signin.js"></script>
+<script src="../js/signin.js"></script>
 <script language="javascript">
 	$(function(){
     $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
@@ -70,7 +70,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 </head>
 
-<body >
+<body style="background: url('img/0.jpeg') no-repeat center;background-size:cover;">
 
 
 
@@ -89,7 +89,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<span class="sign-up tab">欢迎登录J2EE期末作业平台</span>
 			<br/>
 			<label class="sign-up tab">SIGN IN</label>
-			<label class="sign-up tab"><a href="signup.html">SIGN UP</a></label>
+			<label class="sign-up tab"><a href="user/signup.jsp">SIGN UP</a></label>
 
 
     <span class="systemlogo"></span>
