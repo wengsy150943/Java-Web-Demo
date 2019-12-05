@@ -5,63 +5,56 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <!DOCTYPE html>
-<html>
-<head>
-	 <base href="<%=basePath%>">
-	<meta charset="UTF-8">
-	<title>Basic ValidateBox - jQuery EasyUI Demo</title>
-	<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
-	<link rel="stylesheet" type="text/css" href="themes/icon.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
-</head>
-<body>
-	<div style="margin:20px 0;"></div>
-	<div class="easyui-panel" title="用户注册" style="width:400px;padding:10px 60px 20px 60px;">
-	<form action="user" method="post">
-		<input type="hidden" name="oper" value="reg" />
-		<table cellpadding="5">
-			<tr>
-				<td>用户名:</td>
-				<td><input name="uname" class="easyui-validatebox textbox" data-options="required:true"  missingMessage="用户名必填"></td>
-			</tr>
-			<tr>
-				<td>密码:</td>
-				<td><input name="pwd" class="easyui-validatebox textbox" data-options="required:true,validType:'email'" missingMessage="密码必填"></td>
-			</tr>
-			
-			<tr>
-				<td>性别:</td>
-				<td>
-					男: <input type="radio" name="sex" value="1" checked="checked"/>
-					女: <input type="radio" name="sex" value="0"/>
-				</td>
-			</tr>
-			<tr>
-				<td>年龄:</td>
-				<td><input name="age" class="easyui-validatebox textbox" value=""></td>
-			</tr>
-			<tr>
-				<td>出生年月:</td>
-				<td><input name="birth" class="easyui-datebox textbox" value=""></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input type="submit" value="注册" />
-				</td>
-			</tr>
-		</table>
-	</form>
-	</div>
-	<style scoped="scoped">
-		.textbox{
-			height:20px;
-			margin:0;
-			padding:0 2px;
-			box-sizing:content-box;
-		}
-	</style>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>signup</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/signup.js"></script>
+  </head>
+<body style="background: url('../img/0.jpeg') no-repeat center;background-size:cover;">
+    <div class="login-wrap">
 
-</body>
+
+    <div class="login-html">
+      <label class="sign-up tab">CHANGE PASSWORD</label>
+
+
+
+      <form class="login-form" action="../main/main.jsp" method="post">
+
+        <div class="group">
+            <label for="name" class="label">Name</label>
+            <input id="name" name="uname" type="text" class="input" value="" required="">
+        </div>
+        
+        <div class="group">
+            <label for="old-password" class="label" id="passwordLabel">Old Password</label>
+            <input id="old-password" name="pwd" type="password" class="input" data-type="password" required="" minlength="6">
+        </div>
+
+        <div class="group">
+            <label for="password" class="label" id="passwordLabel">Password</label>
+            <input id="password" name="pwd" type="password" class="input" data-type="password" required="" minlength="6">
+        </div>
+
+
+        <div class="group">
+            <label for="password-confirm" class="label">Repeat Password</label>
+            <input id="password-confirm" name="password-confirm" type="password" class="input" data-type="password" required="" minlength="6" onblur="checkPasswd();">
+        </div>
+        <div id="repeat-passwd-notice"style="display:none;height:20px;width:200px;color:red;font-size:5px;">
+            请输入相同的密码！
+        </div>
+            
+        
+              
+        <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+        </div>
+      </form>
+    </div>
+
+    </div>
+  </body>
 </html>

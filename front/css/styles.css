@@ -147,9 +147,62 @@ a {
 	background-color: rgba(10,10,10,.6);
 	cursor: pointer;
 	line-height: 50px;
-	
+
+}
+.add-body{
+	background-image: url(../img/4.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center 0;
+	background-attachment: fixed;
+}
+.add-form {
+	background-color: black;
+	border-radius: 5px;
+	width: 400px;
+	height: auto;
+	position: relative;
+	margin-left: 0;
+	opacity: 0.7;
+	padding:auto;
+	display: block;
+	border: none;
+}
+.add-form .controler{
+	width: 100%;
+	color: skyblue;
+	display: block;
+	opacity: 0.7;
+	border-radius: 2px;
+}
+.add-form .button {
+	border-radius: 2px;
+	border: none;
+	padding: 15px 20px;
+}
+.add-form .label {
+	color: seashell;
+	width: 100px;
+	text-align: center;
+	font: 13 13px"宋体";
+	opacity: 0.8;
+}
+.add-form .button {
+	background: rgba(10, 10, 10, .5) !important;
+/*	border: 3px solid rgba(255, 255, 255, .3) !important;*/
+	cursor: pointer;
+	color:silver;
 }
 
+.add-form input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+        }
+.add-form input[type="text"] {
+        border-radius: 3px;
+    }
 .left-top {
 	color: #fff;
 	padding:auto auto;
@@ -248,16 +301,16 @@ a {
 
 
 .footer{
-	background:#F9ECD9; 
-	height:50px; 
-	border-top:solid 1px #ECCAAA; 
-	line-height:30px; 
+	background:#F9ECD9;
+	height:50px;
+	border-top:solid 1px #ECCAAA;
+	line-height:30px;
 	background-color:rgba(10,10,10,.8);
 	line-height:50px;
 	}
 .footer span{
-	display:block; 
-	float:left; 
+	display:block;
+	float:left;
 	padding-left:35px;
 }
 

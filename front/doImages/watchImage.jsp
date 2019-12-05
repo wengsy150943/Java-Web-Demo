@@ -8,24 +8,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
+
     <title>watchImage</title>
-    
+
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="expires" content="0">
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 
   </head>
-  
-  <body>
-    <form name="simpleform" action="img" method="POST">
+
+  <body class="add-body">
+    <form class="add-form" name="simpleform" action="img" method="POST">
     <input type="hidden" name="oper2" value="watch" />
-	 <table border="1" style="width:400px;cellspacing:1px">
+	 <table border="1" style="border-radius: 5px; width:400px;cellspacing:1px">
                 <tr>
                     <td class="lalel">图片名称</td>
                     <td class="controler"><input type="text" name="name" /></td>
@@ -33,9 +31,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <tr>
                     <td class="label">国家</td>
                     <td class="controler"><input type="text" name="country" ></td>
-                    
+
                 </tr>
-                
+
                 <tr>
                     <td class="label">位置</td>
                     <td class="controler">
@@ -45,29 +43,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					  <option value ="南">南部</option>
 					  <option value ="北">北部</option>
 					</select>
-                	</td>                    
+                	</td>
                 </tr>
                 <tr>
                     <td class="label">分辨率</td>
-                    <td class="controler"><input type="text" name="resolution" ></td>        
+                    <td class="controler"><input type="text" name="resolution" ></td>
                 </tr>
                 <tr>
                     <td class="label">经度</td>
-                    <td class="controler"><input type="text" name="longitude" ></td>        
+                    <td class="controler"><input type="text" name="longitude" ></td>
                 </tr>
                 <tr>
                     <td class="label">纬度</td>
-                    <td class="controler"><input type="text" name="latitude" ></td>        
+                    <td class="controler"><input type="text" name="latitude" ></td>
                 </tr>
                 <tr>
                     <td class="label">上传日期</td>
-                    <td class="controler"><input type="text" name="acquisition_time" ></td>        
+                    <td class="controler"><input type="text" name="acquisition_time" ></td>
                 </tr>
                 <tr>
                     <td class="label">比例尺</td>
-                    <td class="controler"><input type="text" name="scale" ></td>        
+                    <td class="controler"><input type="text" name="scale" ></td>
                 </tr>
-                
+
                 <tr>
                     <td class="lalel"></td>
                     <td class="controler"><button type="submit">开始查找</button>

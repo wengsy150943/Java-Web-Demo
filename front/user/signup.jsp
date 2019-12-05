@@ -21,21 +21,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 
-      <form class="login-form" action="user" method="post">
+      <form class="login-form" action="../main/main.jsp" method="post">
 
         <div class="group">
             <label for="name" class="label">Name</label>
-            <input id="name" name="uname" type="text" class="input" value="" required="" pattern="[A-z0-9À-ž]+-?[A-z0-9À-ž]+" title="Name doesn&#39;t follow the pattern. Only latin letters are allowed.">
+            <input id="name" name="uname" type="text" class="input" value="" required="">
         </div>
         
         <div class="group">
             <label for="birth" class="label">Birth</label>
-            <input id="birth" name="birth" type="text" class="input" value="" required="" pattern="[A-z0-9À-ž]+-?[A-z0-9À-ž]+" title="Name doesn&#39;t follow the pattern. Only latin letters are allowed.">
+            <input id="birth" name="birth" type="text" class="input" value="">
         </div>
         
         <div class="group">
             <label for="age" class="label">Age</label>
-            <input id="age" name="age" type="text" class="input" value="" required="" pattern="[A-z0-9À-ž]+-?[A-z0-9À-ž]+" title="Name doesn&#39;t follow the pattern. Only latin letters are allowed.">
+            <input id="age" name="age" type="text" class="input" value="">
         </div>
         
         <div class="group">
