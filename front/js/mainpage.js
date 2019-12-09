@@ -8,19 +8,17 @@ function getTag(name){
     document.getElementById(name).innerHTML=str;
     return ;
   }
-  str="<br><br>";
+  str="";
   for (var i = 0; i < tag.length; i++) {
-    str += '<button type="button" name="button" class="tag" onclick="changeColor(\''+tag[i%tag.length]+'-button\');"'+'id="'+tag[i%tag.length]+'-button"'+'>'+tag[i%tag.length]+'</button>';
+    str += '<input type="button" name="button" class="tag" onclick="changeColor(\''+tag[i%tag.length]+'-button\');"'+'id="'+tag[i%tag.length]+'-button"'+'value=\"'+tag[i%tag.length]+'\">';
   }
   document.getElementById(name).innerHTML=str;
-//  document.getElementById('countryBox').style.height="auto";
-  var faBox=name+"Box";
-  document.getElementById(faBox).style.height="auto";
+  document.getElementById(name).style.height="auto";
 }
 function changeColor(tagId){
   var tag=document.getElementById(tagId);
-  if(tag.style.backgroundColor=="blue") tag.style.backgroundColor="rgba(100,100,100,100.7)";
-  else   tag.style.backgroundColor="blue";
+  if(tag.style.backgroundColor=="#494e8f") tag.style.backgroundColor="#585eaa";
+  else   tag.style.backgroundColor="#494e8f";
 //  alert("//"+str+"//");
 }
 

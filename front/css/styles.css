@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	color: #ffffff;
-	background: rgba(200, 200,200, .3);
 	background-size: cover;
 	height: 1000px;
 	width: 100%;
@@ -37,9 +36,10 @@ a {
 .login-wrap {
 	width: 100%;
 	margin: auto;
+	margin-top: 5%;
 	max-width: 525px;
 	position: relative;
-	background: url('../img/0.jpeg') no-repeat center;
+	background-color:rgba(200,200,200,.1);
 	background-size: cover;
 	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0
 		rgba(0, 0, 0, .19);
@@ -144,13 +144,12 @@ a {
 	margin-left: 0; cursor : pointer;
 	height: 50px;
 	width: auto;
-	background-color: rgba(10,10,10,.6);
+	background-color: #102b6a;
 	cursor: pointer;
 	line-height: 50px;
 
 }
 .add-body{
-	background-image: url(../img/4.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -206,7 +205,7 @@ a {
 .left-top {
 	color: #fff;
 	padding:auto auto;
-	background-color:rgba(10,10,10,.8);
+	background-color:#181d4b;
 	font-size: 18px;
 	line-height: 50px;
 	height:50px;
@@ -237,6 +236,8 @@ a {
 
 .left-menu .menu-son {
 	display: none;
+	background-color: #2a5caa;
+	margin:0;
 }
 
 .left-menu :first-child .menu-son {
@@ -244,7 +245,7 @@ a {
 }
 .left-menu a{
 	height:50px;
-	color:black;
+	color:white;
 }
 
 .menu-son {
@@ -258,19 +259,15 @@ a {
 
 .menu-son li.active {
 	position: relative;
-	background: url(../images/libg.png) repeat-x;
 	line-height: 30px;
-	color: #fff;
 }
 
 .menu-son li cite {
 	display: block;
 	float: left;
 	margin-left: 32px;
-	background: url(../images/list.gif) no-repeat;
 	width: 16px;
 	height: 16px;
-	margin-top: 7px;
 }
 
 .menu-son li.active cite {
@@ -285,7 +282,6 @@ a {
 	position: absolute;
 	right: 0;
 	z-index: 10000;
-	top: 9px;
 	right: -1px;
 }
 
@@ -301,11 +297,10 @@ a {
 
 
 .footer{
-	background:#F9ECD9;
 	height:50px;
 	border-top:solid 1px #ECCAAA;
 	line-height:30px;
-	background-color:rgba(10,10,10,.8);
+	background-color:#1a2933;
 	line-height:50px;
 	}
 .footer span{
