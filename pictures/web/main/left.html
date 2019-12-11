@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+    <script language="JavaScript" src="../js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.sub-menus li').click(function (e) {
+                $(".sub-menus li.active").removeClass("active")
+                $(this).addClass("active");
+            });
+
+            $('.title').click(function () {
+                var $ul = $(this).next('ul');
+                $('div').find('.menuSon').slideUp();
+                if ($ul.is(':visible')) {
+                    $(this).next('.menuSon').slideUp();
+                } else {
+                    $(this).next('.menuSon').slideDown();
+                }
+            });
+        })
+    </script>
+
+
+</head>
+
+<body>
+<div class="headerTag"><span></span>通讯录</div>
+
+<dl class="menuTag">
+
+    <div class="group" style="line-height: 35px;font-weight: bold;	font-size: 14px;">
+        <div class="title">
+            <span><img src="../images/leftico01.png"/></span>个人信息
+        </div>
+        <ul class="menuSon">
+            <li><cite></cite><a href="../user/change.jsp" target="rightFrame">修改密码</a></li>
+        </ul>
+    </div>
+
+    <div class="group" style="line-height: 35px;	font-weight: bold;	font-size: 14px;">
+        <div class="title">
+            <span><img src="../images/leftico01.png"/></span>图片管理
+        </div>
+        <ul class="menuSon">
+            <li><cite></cite><a href="../doImages/addImage.jsp" target="rightFrame">图片上传</a><i></i></li>
+            <li><cite></cite><a href="../doImages/watchImage.jsp" target="rightFrame">图片展示</a><i></i></li>
+        </ul>
+    </div>
+
+
+</dl>
+</body>
+</html>

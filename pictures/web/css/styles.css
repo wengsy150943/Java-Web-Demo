@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    color: #ffffff;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    /*	font:600 16px/18px 'Open Sans',sans-serif;*/
+}
+
+*, :after, :before {
+    box-sizing: border-box
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    max-width: 525px;
+    position: relative;
+    background-color:rgba(200,200,200,.1);
+    background-size: cover;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0
+    rgba(0, 0, 0, .19);
+}
+
+
+.loginHtml {
+    width: 100%;
+    height: 100%;
+    padding: 120px 70px 50px 70px;
+    background: rgba(0, 0, 0, .7);
+}
+
+.loginHtml .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.loginForm {
+    min-height: 345px;
+    position: relative;
+}
+
+.loginForm .group {
+    margin-bottom: 15px;
+}
+
+.loginForm .group .label, .loginForm .group .input, .loginForm .group .button
+{
+    width: 100%;
+    color: #fff;
+    display: block;
+}
+
+.loginForm .group .input, .loginForm .group .button {
+    border: none;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.loginForm .group .label {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.loginForm .group .button {
+    /*	border: 3px solid rgba(255, 255, 255, .3) !important;*/
+    cursor: pointer;
+    color:silver;
+}
+.loginForm input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255, 255, 255, .2);
+}
+
+.title {
+    margin-left: 0; cursor : pointer;
+    height: 50px;
+    width: auto;
+    background-color: #102b6a;
+    cursor: pointer;
+    line-height: 50px;
+
+}
+.addWrap{
+    background-color: ghostwhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
+.addForm {
+  background-color: white;
+  border-radius: 5px;
+  width: auto;
+  min-width: 400px;
+  height: auto;
+  position: relative;
+  margin-left: 0;
+  opacity: 0.9;
+  padding-left: 5%;
+  padding-right: 65%;
+  padding-top: 5%;
+padding-bottom: 5%;
+  display: block;
+  border: none;
+}
+.addForm .controler{
+    width: 100%;
+    color: skyblue;
+    opacity: 0.7;
+    border-radius: 2px;
+}
+.addForm .label {
+    color: black;
+    width: 33.3%;
+    text-align: left;
+    font: 20 20px"微软雅黑";
+    opacity: 0.8;
+    font-weight: 500;
+}
+.addForm .button {
+    border-radius: 2px;
+    border: none;
+    height: auto;
+    padding: 15px 20px;
+    background: rgba(10, 10, 10, .5) !important;
+    /*	border: 3px solid rgba(255, 255, 255, .3) !important;*/
+    cursor: pointer;
+    color:silver;
+}
+
+.addForm input[type="radio"] {
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+.addForm input[type="text"] {
+    background:none;
+    border:none ;
+    border-bottom:1px	solid #ddd;
+    height: 40px;
+    font:15 15px"微软雅黑";
+    border-radius: 3px;
+}
+.addForm input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.headerTag {
+    color: #fff;
+    padding:auto auto;
+    background-color:#181d4b;
+    font-size: 18px;
+    line-height: 50px;
+    height:50px;
+    z-index:5500;
+}
+
+.headerTag span {
+    margin:12px 10px;
+    background: url(../images/leftico.png) no-repeat;
+    width: 20px;
+    height: 21px;
+    float: left;
+}
+
+.menuTag {
+    width: auto;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    margin-top:0px;
+    overflow: hidden;
+    background: url(../images/leftline.gif) repeat-y right;
+}
+
+
+.menuTag span {
+    float: left;
+    margin: 10px 8px 0 12px;
+}
+
+.menuTag .menuSon {
+    display: none;
+    background-color: #2a5caa;
+    margin:0;
+}
+
+.menuTag :first-child .menuSon {
+    display: block;
+}
+.menuTag a{
+    height:50px;
+    color:white;
+}
+
+.menuSon {
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.menuSon li {
+    cursor: pointer;
+}
+
+.menuSon li.active {
+    position: relative;
+    line-height: 30px;
+}
+
+.menuSon li cite {
+    display: block;
+    float: left;
+    margin-left: 32px;
+    width: 16px;
+    height: 16px;
+}
+
+.menuSon li.active cite {
+    background: url(../images/list1.gif) no-repeat;
+}
+
+.menuSon li.active i {
+    display: block;
+    background: url(../images/sj.png) no-repeat;
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+    right: -1px;
+}
+
+.menuSon li a {
+    display: block;
+    *display: inline;
+    *padding-top: 5px;
+}
+
+.menuSon li.active a {
+    color: #fff;
+}
+
+
+.footer{
+    height:50px;
+    border-top:solid 1px #ECCAAA;
+    line-height:30px;
+    background-color:#1a2933;
+    line-height:50px;
+}
+.footer span{
+    display:block;
+    float:left;
+    padding-left:35px;
+}
+
+.box{height:15px;}
+.box li{
+    height:30px;
+    width:fit-content;
+    padding: 0px 10px;
+    line-height: 30px;
+    margin-left: 10px;
+    border-style:none none solid none;
+    border-width: thin;
+    border-color: silver;
+}
