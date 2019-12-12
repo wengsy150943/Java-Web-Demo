@@ -3,7 +3,7 @@ package pojo;
 import java.util.Objects;
 
 public class Pic {
-    private int id;
+    private String id;
     private String name;
     private String country;
     private String position;
@@ -13,7 +13,7 @@ public class Pic {
     private String acquisition_time;
     private String scale;
 
-    public Pic(int id, String image_path, String country, String position, String resolution, String longitude, String latitude, String acquisition_time, String scale) {
+    public Pic(String id, String image_path, String country, String position, String resolution, String longitude, String latitude, String acquisition_time, String scale) {
         this.id = id;
         this.name = image_path;
         this.country = country;
@@ -65,11 +65,11 @@ public class Pic {
         return Objects.hash(getId(), getName(), getCountry(), getPosition(), getResolution(), getLongitude(), getLatitude(), getAcquisition_time(), getScale());
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
