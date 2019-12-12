@@ -76,6 +76,7 @@
             </td>
         </tr>
     </table>
+    <div> ${uploadStatus}</div>
 </form>
 </body>
 </html>
