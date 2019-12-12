@@ -6,7 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="" />
+    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/css/mainpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/css/mainpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/css/start.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/css/start.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/addImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/addImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/js/mainpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/js/mainpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/main/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/main/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/main/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/main/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/main/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/main/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/change.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/change.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/userInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pictures/META-INF/pictures.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +74,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -65,12 +88,14 @@
     <option name="jreName" value="11" />
   </component>
   <component name="ProjectId" id="1UJcGqFYcIZmTk587JPQ8rfXH7r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/css" />
@@ -213,10 +238,36 @@
       <workItem from="1575902515297" duration="6886000" />
       <workItem from="1575949334797" duration="6284000" />
       <workItem from="1576054628764" duration="1276000" />
+      <workItem from="1576133994202" duration="574000" />
+      <workItem from="1576134615096" duration="560000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/doImages/watchImage.jsp</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

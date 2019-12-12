@@ -13,7 +13,7 @@
     <frameset cols="187,*" frameborder="no" border="0" framespacing="0">
         <frame src="left.html" name="leftFrame" scrolling="no"
                noresize="noresize" id="leftFrame" title="leftFrame" />
-        <frame src="right.html" name="rightFrame" id="rightFrame"
+        <frame src="../user/change.jsp" name="rightFrame" id="rightFrame"
                title="rightFrame" />
     </frameset>
     <frame src="footer.html" name="bottomFrame" scrolling="no"

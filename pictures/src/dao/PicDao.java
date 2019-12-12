@@ -11,6 +11,21 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class PicDao {
+
+    public void deleteDao(String name) {
+        String sql;
+        PreparedStatement stmt = null;
+        Connection con = null;
+        try {
+            sql = "DELETE FROM pictures WHERE name=?";
+            stmt = con.prepareStatement(sql);
+            stmt.setString(1, name);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static ArrayList<Pic> getAllPictures() {
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -95,8 +110,8 @@ public class PicDao {
     }
 
     public static void main(String[] args) {
-        ArrayList<Pic> pics=getAllPictures();
-        for(Pic pic:pics){
+        ArrayList<Pic> pics = getAllPictures();
+        for (Pic pic : pics) {
             System.out.println(1);
             System.out.println(pic.getResolution());
         }

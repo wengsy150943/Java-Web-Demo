@@ -22,14 +22,14 @@
 </head>
 
 <body>
-<div class="left-top" style="position:fixed;width:100%;z-index:5500;">
+<div class="headerTag" style="position:fixed;width:100%;z-index:5500;">
     <li style="margin-left:10px;font-size:18px;">位置：
         <a href="#" style="color:silver;">首页</a>
     </li>
 </div>
 <form name="simpleform" action="../servlet/UploadServlet" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="oper2" value="add"/>
-    <table class="add-form" border="0" style="color: darkgrey;border-radius: 5px; width:auto; cellspacing:1px">
+    <table class="addForm" border="0" style="color: darkgrey;border-radius: 5px; width:auto; cellspacing:1px">
         <tr>
             <td class="label">图片名称</td>
             <td class="label">国家</td>
