@@ -51,7 +51,7 @@
     <div class="selectBox">
 
 
-        <form action="" method="post">
+        <form action="watchImage.jsp" method="post">
           <table class="addForm" border="0" style="color: darkgrey;border-radius: 5px; width:auto; cellspacing:1px">
               <tr>
                   <td class="label">图片名称</td>
@@ -63,7 +63,7 @@
                   <td class="controler"><input type="text" name="country"></td>
                   <td class="controler">
                       <select margin:0 20%; name="position">
-                          <option value="东">东部</div></option>
+                          <option value="东">东部</option>
                           <option value="西">西部</option>
                           <option value="南">南部</option>
                           <option value="北">北部</option>
@@ -105,8 +105,19 @@
     <div class="gallery">
         <!-- 图片加载在这里-->
         <%
-            ArrayList<Pic> li = (ArrayList<Pic>) PicDao.getAllPictures();
+            ArrayList<Pic> li = (ArrayList<Pic>) PicDao.getPicturesByName(request.getParameter("key_word"));
             for (Pic pic : li) {
+              String name,country,position,resolution,scale;
+              name = request.getParameter("name");
+              country = request.getParameter("country");
+              position = request.getParameter("position");
+              resolution = request.getParameter("resolution");
+              scale = request.getParameter("scale");
+              if(name!=""&&name!=pic.getUname()) continue;
+              if(country!=""&&country!=pic.getCountry()) continue;
+              if(position!=""&&position!=pic.getPosition()) continue;
+              if(resolution!=""&&resolution!=pic.getResolution()) continue;
+              if(scale!=""&&scale!=pic.getScale()) continue;
         %>
 
         <div>
