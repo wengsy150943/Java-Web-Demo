@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/pictures/10185101261_lab6_徐天舒.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/屏幕快照 2019-11-22 20.51.01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/屏幕快照 2019-11-26 13.27.10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PicDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/doImages/addImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doImages/addImage.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +226,7 @@
       <workItem from="1575949334797" duration="6284000" />
       <workItem from="1576054628764" duration="1276000" />
       <workItem from="1576133994202" duration="574000" />
-      <workItem from="1576134615096" duration="4589000" />
+      <workItem from="1576134615096" duration="6604000" />
     </task>
     <servers />
   </component>
