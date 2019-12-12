@@ -113,11 +113,11 @@
               position = request.getParameter("position");
               resolution = request.getParameter("resolution");
               scale = request.getParameter("scale");
-              if(name!=""&&name!=li.getUname()) continue;
-              if(country!=""&&country!=li.getCountry()) continue;
-              if(position!=""&&position!=li.getPosition()) continue;
-              if(resolution!=""&&resolution!=li.getResolution()) continue;
-              if(scale!=""&&scale!=li.getScale()) continue;
+              if(name!=""&&name!=pic.getUname()) continue;
+              if(country!=""&&country!=pic.getCountry()) continue;
+              if(position!=""&&position!=pic.getPosition()) continue;
+              if(resolution!=""&&resolution!=pic.getResolution()) continue;
+              if(scale!=""&&scale!=pic.getScale()) continue;
         %>
 
         <div>
