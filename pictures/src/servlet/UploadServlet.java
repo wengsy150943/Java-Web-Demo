@@ -81,6 +81,7 @@ public class UploadServlet extends HttpServlet {
                         }
                         Calendar calendar = Calendar.getInstance();
                         pic.setId(calendar.toString());
+                        System.out.println(pic.toString());
                         picDao.insertDao(pic);
                         String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + calendar.toString() + type;  //用户上传的文件名
                         File file = new File(fileUpName);  //要保存到的文件
