@@ -40,7 +40,7 @@
             <td class="controler"><input type="text" name="country"></td>
             <td class="controler">
                 <select margin:0 20%; name="position">
-                    <option value="东">东部</div></option>
+                    <option value="东">东部</option>
                     <option value="西">西部</option>
                     <option value="南">南部</option>
                     <option value="北">北部</option>
@@ -67,7 +67,7 @@
         <tr>
             <td class="controler"><input type="text" name="acquisition_time"></td>
             <td class="controler"><input type="text" name="scale"></td>
-            <td class="controler"><input type="file" name="Resume" multiple/></td>
+            <td class="controler"><input type="file" name="filename" multiple/></td>
         </tr>
         <tr>
             <td>&nbsp;</td>

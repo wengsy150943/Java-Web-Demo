@@ -12,6 +12,28 @@ import java.util.ArrayList;
 
 public class PicDao {
 
+    public void insert(Pic pic) {
+        String sql;
+        PreparedStatement stmt = null;
+        Connection con = null;
+        try {
+            sql = "INSERT INTO pictures VALUES '?,?,?,?,?,?,?,?,?'";
+            stmt.setInt(1, pic.getId());
+            stmt.setString(2, pic.getName());
+            stmt.setString(3, pic.getCountry());
+            stmt.setString(4, pic.getPosition());
+            stmt.setString(5, pic.getResolution());
+            stmt.setString(6, pic.getLongitude());
+            stmt.setString(7, pic.getLatitude());
+            stmt.setString(8, pic.getAcquisition_time());
+            stmt.setString(9, pic.getScale());
+            stmt = con.prepareStatement(sql);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void deleteDao(String name) {
         String sql;
         PreparedStatement stmt = null;
