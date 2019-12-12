@@ -33,7 +33,7 @@ public class UploadServlet extends HttpServlet {
         if (m.matches()) {
             return m.group(3);
         } else {
-            return null;
+            return "1";
         }
     }
 
@@ -91,16 +91,19 @@ public class UploadServlet extends HttpServlet {
                         }
                     } else {
                         String type = getPicName(fileItem.getName());
-                        if (type == null) {
+                        //System.out.println(type);
+                        if (type.equals("1")) {
+                            System.out.println("文件类型必须为jpg、png");
                             request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
+                            return ;
                         }
                         Calendar calendar = Calendar.getInstance();
                         pic.setId(calendar.getTime().toString());
                         //System.out.println(pic.toString());
                         picDao.insertDao(pic);
                         request.getSession().setAttribute("uploadStatus", "上传成功！");
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + pic.getId() + "."+type;  //用户上传的文件名
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + pic.getId() + "." + type;  //用户上传的文件名
                         System.out.println(fileUpName);
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
