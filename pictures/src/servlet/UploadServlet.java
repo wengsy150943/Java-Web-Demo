@@ -59,12 +59,14 @@ public class UploadServlet extends HttpServlet {
                 @SuppressWarnings("unchecked")
                 List<FileItem> itemList = upload.parseRequest(request);  //解析表单字段，封装成一个FileItem实例的集合
                 Iterator<FileItem> iterator = itemList.iterator();  //迭代器
+                Pic pic = new Pic();
                 while (iterator.hasNext()) {
                     FileItem fileItem = iterator.next();
-                    Pic pic = new Pic();
+
                     if (fileItem.isFormField()) {
+                        System.out.println(fileItem.getFieldName());
                         if (fileItem.getFieldName().equals("name")) {
-                            pic.setName(fileItem.getString());
+                            pic.setName(fileItem.getString("UTF8"));
                         }
                         if (fileItem.getFieldName().equals("country")) {
                             pic.setCountry(fileItem.getString());
@@ -94,11 +96,12 @@ public class UploadServlet extends HttpServlet {
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
                         }
                         Calendar calendar = Calendar.getInstance();
-                        pic.setId(calendar.toString());
-                        System.out.println(pic.toString());
+                        pic.setId(calendar.getTime().toString());
+                        //System.out.println(pic.toString());
                         picDao.insertDao(pic);
                         request.getSession().setAttribute("uploadStatus", "上传成功！");
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + calendar.toString() + type;  //用户上传的文件名
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + pic.getId() + "."+type;  //用户上传的文件名
+                        System.out.println(fileUpName);
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
                             file.createNewFile();  //一开始肯定是没有的，所以先创建出来
