@@ -12,13 +12,13 @@ import java.util.ArrayList;
 
 public class PicDao {
 
-    public void insert(Pic pic) {
+    public void insertDao(Pic pic) {
         String sql;
         PreparedStatement stmt = null;
         Connection con = null;
         try {
             sql = "INSERT INTO pictures VALUES '?,?,?,?,?,?,?,?,?'";
-            stmt.setInt(1, pic.getId());
+            stmt.setString(1, pic.getId());
             stmt.setString(2, pic.getName());
             stmt.setString(3, pic.getCountry());
             stmt.setString(4, pic.getPosition());
@@ -128,14 +128,6 @@ public class PicDao {
                     ex.printStackTrace();
                 }
             }
-        }
-    }
-
-    public static void main(String[] args) {
-        ArrayList<Pic> pics = getAllPictures();
-        for (Pic pic : pics) {
-            System.out.println(1);
-            System.out.println(pic.getResolution());
         }
     }
 }

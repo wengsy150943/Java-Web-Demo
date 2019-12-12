@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="" />
+    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pojo/Pic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojo/Pic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +228,7 @@
       <workItem from="1576054628764" duration="1276000" />
       <workItem from="1576133994202" duration="574000" />
       <workItem from="1576134615096" duration="7251000" />
+      <workItem from="1576155491556" duration="890000" />
     </task>
     <servers />
   </component>
@@ -244,16 +250,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/doImages/watchImage.jsp</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
