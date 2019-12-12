@@ -16,8 +16,12 @@ import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.List;
 
+
 @WebServlet(name = "UploadServlet")
 public class UploadServlet extends HttpServlet {
+
+    //String realPath = getServletContext().getRealPath("/");
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
@@ -37,16 +41,17 @@ public class UploadServlet extends HttpServlet {
                     if (fileItem.isFormField()) {
                         //普通表单字段
                         //if (fileItem.getFieldName().equals("userName")) {
-                        System.out.println(fileItem.getString("UTF-8"));  //如果表单属性name的值的userName，就获取这个表单字段的值
+                        //System.out.println(fileItem.getString("UTF-8"));  //如果表单属性name的值的userName，就获取这个表单字段的值
                         //}
                     } else {
                         //文件表单字段
-                        String fileUpName = fileItem.getName();  //用户上传的文件名
+                        String fileUpName = "/" + fileItem.getName();  //用户上传的文件名
+                        //System.out.println(realPath);
                         System.out.println(fileUpName);
 
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
-                            System.out.println(1);
+                            //System.out.println(1);
                             file.createNewFile();  //一开始肯定是没有的，所以先创建出来
                         }
                         fileItem.write(file);  //写入，保存到目标文件
