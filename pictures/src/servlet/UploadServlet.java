@@ -32,11 +32,14 @@ public class UploadServlet extends HttpServlet {
         StringBuffer fileStr = new StringBuffer();  //上传的文件名，最后输出用
         try {
             if (isMultipart) {
-                FileItemFactory factory = new DiskFileItemFactory();  //工厂实例
-                ServletFileUpload upload = new ServletFileUpload(factory);  //ServletFileUpload实例依赖于FileItemFactory工厂
+                DiskFileItemFactory factory = new DiskFileItemFactory();  //工厂实例
+                ServletFileUpload upload = new ServletFileUpload(factory);
+                //ServletFileUpload实例依赖于FileItemFactory工厂
+                @SuppressWarnings("unchecked")
                 List<FileItem> itemList = upload.parseRequest(request);  //解析表单字段，封装成一个FileItem实例的集合
                 Iterator<FileItem> iterator = itemList.iterator();  //迭代器
                 while (iterator.hasNext()) {
+                    System.out.println(2);
                     FileItem fileItem = iterator.next();  //依次解析每一个FileItem实例，即表单字段
                     if (fileItem.isFormField()) {
                         //普通表单字段
@@ -45,19 +48,20 @@ public class UploadServlet extends HttpServlet {
                         //}
                     } else {
                         //文件表单字段
-                        String fileUpName = "/" + fileItem.getName();  //用户上传的文件名
-                        //System.out.println(realPath);
-                        System.out.println(fileUpName);
-
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + fileItem.getName();  //用户上传的文件名
+                        System.out.println(request.getSession().getServletContext().getRealPath(""));
+                        //System.out.println(fileUpName);
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
-                            //System.out.println(1);
+                            System.out.println(1);
                             file.createNewFile();  //一开始肯定是没有的，所以先创建出来
                         }
                         fileItem.write(file);  //写入，保存到目标文件
                         //fileStr.append(fileUpName + "、");
                     }
                 }
+                System.out.println("finish");
+                response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
                 //fileStr.replace(fileStr.lastIndexOf("、"), fileStr.length(), "");
                 //writer.print("<script>alert('用户" + userName + "上传了文件" + fileStr + "')</script>");
             }

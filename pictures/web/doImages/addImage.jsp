@@ -67,7 +67,7 @@
         <tr>
             <td class="controler"><input type="text" name="acquisition_time"></td>
             <td class="controler"><input type="text" name="scale"></td>
-            <td class="controler"><input type="file" name="Resume" multiple/></td>
+            <td class="controler"><input type="file" name="filename" multiple/></td>
         </tr>
         <tr>
             <td>&nbsp;</td>

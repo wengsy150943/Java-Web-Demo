@@ -29,7 +29,7 @@
 
 
 
-<div class="Wrap">
+<div class="wrap">
 
 
 
@@ -41,7 +41,7 @@
         <label class="sign-up tab"><a href="user/signup.jsp">注册</a></label>
 
 
-        <form action="servlet/LoginServlet" method="post"  class="login-form">
+        <form action="servlet/LoginServlet" method="post"  class="loginForm">
             <input type="hidden" name="oper" value="login" />
             <ul>
 
