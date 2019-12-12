@@ -116,9 +116,10 @@
             <%
                 if (((User) session.getAttribute("user")).isAdmin()) {
             %>
-            <button class="submitButton" onclick="javascript:return del();" style="background-color:red;color:black;">
-                删除
-            </button>
+            <form>
+            <input type="text" value="<%= pic.getId()%>" style="display:none;">
+            <input type="submit" action="" value="删除"class="submitButton" onclick="javascript:return del();" style="background-color:red;color:black;">
+          </form>
             <%} %>
             <div class="fullSrceen" style="top:0;
             left:0;
@@ -147,9 +148,10 @@
                         <%
                             if (((User) session.getAttribute("user")).isAdmin()) {
                         %>
-                        <button class="submitButton" onclick="javascript:return del();"
-                                style="background-color:red;color:black;">删除
-                        </button>
+                        <form>
+                        <input type="text" value="<%= pic.getId()%>" style="display:none;">
+                        <input type="submit" action="" value="删除"class="submitButton" onclick="javascript:return del();" style="background-color:red;color:black;">
+                      </form>
                         <%} %>
                     </ul>
                 </div>
