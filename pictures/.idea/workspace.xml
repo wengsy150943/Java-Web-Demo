@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/PicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +222,7 @@
       <workItem from="1575949334797" duration="6284000" />
       <workItem from="1576054628764" duration="1276000" />
       <workItem from="1576133994202" duration="574000" />
-      <workItem from="1576134615096" duration="6604000" />
+      <workItem from="1576134615096" duration="7251000" />
     </task>
     <servers />
   </component>
