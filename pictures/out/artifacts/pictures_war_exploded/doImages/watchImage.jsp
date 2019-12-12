@@ -23,17 +23,17 @@
                 $tar.next().next().show();
             });
 
-            $(".fullsrceen .button").click(function () {
-                $(".fullsrceen").hide();
+            $(".fullSrceen .button").click(function () {
+                $(".fullSrceen").hide();
             });
 
 
         })
 
         function del() {
-            var msg = "您真的确定要删除吗？\n\n请确认！";
+            var msg = "请确认删除信息！";
             if (confirm(msg) == true) {
-                $(".fullsrceen").hide();
+                $(".fullSrceen").hide();
                 return true;
             } else {
                 return false;
@@ -42,24 +42,63 @@
     </script>
 </head>
 <body>
-<div class="left-top" style="position:fixed;width:100%;z-index:5500;">
+<div class="headerTag" style="position:fixed;width:100%;z-index:5500;">
     <li style="margin-left:10px;font-size:18px;">位置：<a href="#" style="color:silver;">首页</a></li>
 </div>
 
 <div style="padding-top:50px;overflow:hidden;">
 
-    <div class="select-box">
+    <div class="selectBox">
 
 
         <form action="" method="post">
-            <button type="button" id="button" onclick="getTag('country');" style="display:none;"></button>
-            <label for="button" style="margin-top:10px;">COUNTRY</label>
-            <div id="country" style="margin:0;height:auto;"></div>
+          <table class="addForm" border="0" style="color: darkgrey;border-radius: 5px; width:auto; cellspacing:1px">
+              <tr>
+                  <td class="label">图片名称</td>
+                  <td class="label">国家</td>
+                  <td class="label">位置</td>
+              </tr>
+              <tr>
+                  <td class="controler"><input type="text" name="name"/></td>
+                  <td class="controler"><input type="text" name="country"></td>
+                  <td class="controler">
+                      <select margin:0 20%; name="position">
+                          <option value="东">东部</div></option>
+                          <option value="西">西部</option>
+                          <option value="南">南部</option>
+                          <option value="北">北部</option>
+                      </select>
+                  </td>
+              </tr>
 
-            <p>KEY WORD</p>
-            <input type="text" name="" value="" class="inputBox">
-            <input id="submit" type="submit" name="" value="" style="display:none;">
-            <label for="submit" class="tag" style="height:50px;width:100px;">SUBMIT</label>
+              <tr>
+                  <td class="label">分辨率</td>
+                  <td class="label">经度</td>
+                  <td class="label">纬度</td>
+              </tr>
+              <tr>
+                  <td class="controler"><input type="text" name="resolution"></td>
+                  <td class="controler"><input type="text" name="longitude"></td>
+                  <td class="controler"><input type="text" name="latitude"></td>
+              </tr>
+              <tr>
+                  <td class="label">上传日期</td>
+                  <td class="label">比例尺</td>
+                  <td class="label">关键词</td>
+
+              </tr>
+              <tr>
+                  <td class="controler"><input type="text" name="acquisition_time"></td>
+                  <td class="controler"><input type="text" name="scale"></td>
+                  <td class="controler"><input type="text" name="key_word"/></td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td class="controler">
+                      <button class="button" style="width:100%;" type="submit">查询</button>
+                  </td>
+              </tr>
+          </table>
         </form>
     </div>
 
@@ -77,11 +116,11 @@
             <%
                 if (((User) session.getAttribute("user")).isAdmin()) {
             %>
-            <button class="submit-button" onclick="javascript:return del();" style="background-color:red;color:black;">
+            <button class="submitButton" onclick="javascript:return del();" style="background-color:red;color:black;">
                 删除
             </button>
             <%} %>
-            <div class="fullsrceen" style="top:0;
+            <div class="fullSrceen" style="top:0;
             left:0;
             width:100%;
             height:100%;
@@ -101,14 +140,14 @@
                         </li>
                         <li><%= pic.getLatitude() %>
                         </li>
-                        <li><!--<%= pic.getAcquisition_time() %>--></li>
+                        <li><%= pic.getAcquisition_time() %></li>
                         <li><%= pic.getScale() %>
                         </li>
                         <button class="button">退出</button>
                         <%
                             if (((User) session.getAttribute("user")).isAdmin()) {
                         %>
-                        <button class="submit-button" onclick="javascript:return del();"
+                        <button class="submitButton" onclick="javascript:return del();"
                                 style="background-color:red;color:black;">删除
                         </button>
                         <%} %>

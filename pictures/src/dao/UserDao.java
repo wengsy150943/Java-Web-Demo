@@ -16,6 +16,7 @@ public class UserDao {
     ResultSet rs = null;
     String sql;
 
+
     public void changeDao(String username, String password) {
         try {
             sql = "UPDATE users SET password=? WHERE username=?";

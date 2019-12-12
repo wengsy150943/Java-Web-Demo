@@ -1,5 +1,5 @@
 
-.start_bg{
+.bg{
 	position:fixed;
 	top: 0;
 	left: 0;
@@ -32,36 +32,4 @@
 	60%{background-image: url(../img/3.jpeg);}
 	80%{background-image: url(../img/4.jpeg);}
 	100%{background-image: url(../img/5.jpeg);}
-}
-.signin-up{
-	top: 300px;
-	left: 500px;
-	padding: 50px 100px;
-	position: absolute;
-}
-.start_title{
-	top:200px;
-	left: 35%;
-	position: absolute;
-	text-align: center;
-	font:70 50px"宋体";
-	color: floralwhite;
-	text-shadow:5px 5px 5px white,
-				10px -10px 5px cyan;
-	opacity: 0.7;
-}
-.start_button{
-	background: rgba(10, 10, 10, .5);
-	top:350px;
-	left:45%;
-	position: absolute;
-	border-radius: 5px;
-	border:none;
-	padding: 15px 20px;
-	width: 200px;
-	height: 100px;
-	display: block;
-	font-size: 30px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	opacity: 0.7;
 }

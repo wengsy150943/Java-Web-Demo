@@ -1,7 +1,6 @@
 function getTag(name){
   var tag = new Array("china","america","england");
-  //tag = {};//needed
-//  var classStyle="tag";
+
 
   var str="";
   if(document.getElementById(name).innerHTML!=str){
@@ -20,19 +19,4 @@ function changeColor(tagId){
   if(tag.style.backgroundColor=="#494e8f") tag.style.backgroundColor="#585eaa";
   else   tag.style.backgroundColor="#494e8f";
 //  alert("//"+str+"//");
-}
-
-function overturnTag(str1,str2){
-  var target=document.getElementById(str1);
-  var button=document.getElementById(str2);
-//  alert(str2);
-
-  if(target.style.display=="block"){
-    target.style.display="none";
-    button.innerHTML="SHOWTAG";
-  }
-  else{
-     target.style.display="block";
-     button.innerHTML="HIDETAG";
-  }
 }

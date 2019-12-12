@@ -38,9 +38,9 @@ $(document).ready(function(){
 </head>
 
 
-<body class="add-body">
+<body class="addWrap">
 
-  <div class="left-top">
+  <div class="headerTag">
     <li style="margin-left:10px;font-size:18px;">位置：
 
     <a href="#" style="color:silver;">首页</a>
@@ -50,7 +50,7 @@ $(document).ready(function(){
   </div>
 
 
-      <div class="add-form">
+      <div class="addForm">
         <table border="1" style="border-radius: 5px; width:400px;cellspacing:1px">
                      <tr>
                          <td class="label">用户名</td>
@@ -64,33 +64,8 @@ $(document).ready(function(){
 
 
 
-<!--
-    <div class="tip">
-    	<div class="tiptop"><span>提示信息</span><a></a></div>
-
-      <div class="tipinfo">
-        <span><img src="images/ticon.png" /></span>
-        <div class="tipright">
-        <p>是否确认对信息的修改 ？</p>
-        <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
-        </div>
-        </div>
-
-        <div class="tipbtn">
-        <input name="" type="button"  class="sure" value="确定" />&nbsp;
-        <input name="" type="button"  class="cancel" value="取消" />
-        </div>
-
-    </div>
--->
-
-
-
     </div>
 
-    <script type="text/javascript">
-	$('.tablelist tbody tr:odd').addClass('odd');
-	</script>
 
 </body>
 

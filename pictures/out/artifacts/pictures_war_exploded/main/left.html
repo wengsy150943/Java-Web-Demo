@@ -9,7 +9,6 @@
 
     <script type="text/javascript">
         $(function () {
-            // 三级菜单点击
             $('.sub-menus li').click(function (e) {
                 $(".sub-menus li.active").removeClass("active")
                 $(this).addClass("active");
@@ -17,11 +16,11 @@
 
             $('.title').click(function () {
                 var $ul = $(this).next('ul');
-                $('div').find('.menu-son').slideUp();
+                $('div').find('.menuSon').slideUp();
                 if ($ul.is(':visible')) {
-                    $(this).next('.menu-son').slideUp();
+                    $(this).next('.menuSon').slideUp();
                 } else {
-                    $(this).next('.menu-son').slideDown();
+                    $(this).next('.menuSon').slideDown();
                 }
             });
         })
@@ -31,15 +30,15 @@
 </head>
 
 <body>
-<div class="left-top"><span></span>通讯录</div>
+<div class="headerTag"><span></span>通讯录</div>
 
-<dl class="left-menu">
+<dl class="menuTag">
 
     <div class="group" style="line-height: 35px;font-weight: bold;	font-size: 14px;">
         <div class="title">
             <span><img src="../images/leftico01.png"/></span>个人信息
         </div>
-        <ul class="menu-son">
+        <ul class="menuSon">
             <li><cite></cite><a href="../user/change.jsp" target="rightFrame">修改密码</a></li>
         </ul>
     </div>
@@ -48,7 +47,7 @@
         <div class="title">
             <span><img src="../images/leftico01.png"/></span>图片管理
         </div>
-        <ul class="menu-son">
+        <ul class="menuSon">
             <li><cite></cite><a href="../doImages/addImage.jsp" target="rightFrame">图片上传</a><i></i></li>
             <li><cite></cite><a href="../doImages/watchImage.jsp" target="rightFrame">图片展示</a><i></i></li>
         </ul>
