@@ -1,5 +1,7 @@
 package servlet;
 
+import dao.PicDao;
+import pojo.Pic;
 import util.StringUtil;
 import util.StringUtil.*;
 import org.apache.commons.fileupload.FileItem;
@@ -15,18 +17,33 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 @WebServlet(name = "UploadServlet")
 public class UploadServlet extends HttpServlet {
 
+    static String getPicName(String s) {
+        Pattern p = Pattern.compile("(.*)(\\.)(png|jpg)", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+        Matcher m = p.matcher(s);
+        if (m.matches()) {
+            return m.group(3);
+        } else {
+            return null;
+        }
+    }
+
     //String realPath = getServletContext().getRealPath("/");
 
-    private static Integer id = 0;
+    PicDao picDao = new PicDao();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession().removeAttribute("uploadStatus");
+
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
@@ -44,17 +61,44 @@ public class UploadServlet extends HttpServlet {
                 Iterator<FileItem> iterator = itemList.iterator();  //迭代器
                 while (iterator.hasNext()) {
                     FileItem fileItem = iterator.next();
+                    Pic pic = new Pic();
                     if (fileItem.isFormField()) {
-                        if (fileItem.getFieldName().equals("userName")) {
-                            System.out.println(fileItem.getString("UTF-8"));  //如果表单属性name的值的userName，就获取这个表单字段的值
+                        if (fileItem.getFieldName().equals("name")) {
+                            pic.setName(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("country")) {
+                            pic.setCountry(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("scale")) {
+                            pic.setScale(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("position")) {
+                            pic.setPosition(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("latitude")) {
+                            pic.setLatitude(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("longitude")) {
+                            pic.setLongitude(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("acquisition_time")) {
+                            pic.setAcquisition_time(fileItem.getString());
+                        }
+                        if (fileItem.getFieldName().equals("resolution")) {
+                            pic.setResolution(fileItem.getString());
                         }
                     } else {
-                        String type = StringUtil.getPicName(fileItem.getFieldName());
+                        String type = getPicName(fileItem.getName());
                         if (type == null) {
-                            request.getSession().setAttribute("uploadStatus","文件类型必须为jpg、png");
+                            request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
                         }
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + (++id).toString() + type;  //用户上传的文件名
+                        Calendar calendar = Calendar.getInstance();
+                        pic.setId(calendar.toString());
+                        System.out.println(pic.toString());
+                        picDao.insertDao(pic);
+                        request.getSession().setAttribute("uploadStatus", "上传成功！");
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + calendar.toString() + type;  //用户上传的文件名
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
                             file.createNewFile();  //一开始肯定是没有的，所以先创建出来

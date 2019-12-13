@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class PicUtil {
 
     public static void setPic(Pic pic, ResultSet rs) throws SQLException {
-        pic.setId(rs.getInt("id"));
+        pic.setId(rs.getString("id"));
         pic.setName(rs.getString("name"));
         pic.setCountry(rs.getString("country"));
         pic.setLongitude(rs.getString("longitude"));

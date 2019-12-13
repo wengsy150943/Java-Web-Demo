@@ -6,7 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="" />
+    <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/src/dao/PicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pojo/Pic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojo/Pic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/addImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/addImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/10185101261_lab6_徐天舒.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/屏幕快照 2019-11-22 20.51.01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/屏幕快照 2019-11-26 13.27.10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/计算机网络实验报告模版.docx" beforeDir="false" />
+>>>>>>> Stashed changes
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +241,7 @@
       <workItem from="1576054628764" duration="1276000" />
       <workItem from="1576133994202" duration="574000" />
       <workItem from="1576134615096" duration="7251000" />
+      <workItem from="1576155491556" duration="890000" />
     </task>
     <servers />
   </component>
@@ -244,16 +263,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/doImages/watchImage.jsp</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
