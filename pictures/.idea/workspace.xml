@@ -7,16 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/pictures/Fri Dec 13 00:23:02 CST 2019.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9b465267-c067-437d-a8ad-44252a1069b8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9b465267-c067-437d-a8ad-44252a1069b8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/util/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/util/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/addImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/addImage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pictures/util/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/util/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Fri Dec 13 00:41:53 CST 2019.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Fri Dec 13 00:41:53 CST 2019.1" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +243,9 @@
       <workItem from="1576133994202" duration="574000" />
       <workItem from="1576134615096" duration="7251000" />
       <workItem from="1576155491556" duration="890000" />
-      <workItem from="1576157567498" duration="6527000" />
+      <workItem from="1576157567498" duration="7346000" />
+      <workItem from="1576243674113" duration="977000" />
+      <workItem from="1576663415137" duration="7000" />
     </task>
     <servers />
   </component>
