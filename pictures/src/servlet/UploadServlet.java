@@ -25,6 +25,16 @@ import java.util.List;
 @WebServlet(name = "UploadServlet")
 public class UploadServlet extends HttpServlet {
 
+
+    static String getPicName(String s) {
+        Pattern p = Pattern.compile("(.*)(\\.)(png|jpg)", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+        Matcher m = p.matcher(s);
+        if (m.matches()) {
+            return m.group(3);
+        } else {
+            return "1";
+        }
+    }
     //String realPath = getServletContext().getRealPath("/");
 
     PicDao picDao = new PicDao();
@@ -45,12 +55,14 @@ public class UploadServlet extends HttpServlet {
                 @SuppressWarnings("unchecked")
                 List<FileItem> itemList = upload.parseRequest(request);  //解析表单字段，封装成一个FileItem实例的集合
                 Iterator<FileItem> iterator = itemList.iterator();  //迭代器
+                Pic pic = new Pic();
                 while (iterator.hasNext()) {
                     FileItem fileItem = iterator.next();
-                    Pic pic = new Pic();
+
                     if (fileItem.isFormField()) {
+                        System.out.println(fileItem.getFieldName());
                         if (fileItem.getFieldName().equals("name")) {
-                            pic.setName(fileItem.getString());
+                            pic.setName(fileItem.getString("UTF8"));
                         }
                         if (fileItem.getFieldName().equals("country")) {
                             pic.setCountry(fileItem.getString());
@@ -74,14 +86,17 @@ public class UploadServlet extends HttpServlet {
                             pic.setResolution(fileItem.getString());
                         }
                     } else {
-                        String type = StringUtil.getPicName(fileItem.getName());
-                        if (type == null) {
+                        String type = getPicName(fileItem.getName());
+                        //System.out.println(type);
+                        if (type.equals("1")) {
+                            System.out.println("文件类型必须为jpg、png");
                             request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
+                            return ;
                         }
                         Calendar calendar = Calendar.getInstance();
-                        pic.setId(calendar.toString());
-                        System.out.println(pic.toString());
+                        pic.setId(calendar.getTime().toString());
+                        //System.out.println(pic.toString());
                         picDao.insertDao(pic);
                         String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + calendar.toString() + type;  //用户上传的文件名
                         File file = new File(fileUpName);  //要保存到的文件

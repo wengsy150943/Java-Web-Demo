@@ -13,11 +13,14 @@ import java.util.ArrayList;
 public class PicDao {
 
     public void insertDao(Pic pic) {
+        System.out.println("Start Insert");
         String sql;
         PreparedStatement stmt = null;
-        Connection con = null;
+        Connection con = DBUtil.getCon();
+        System.out.println("Connection Success");
         try {
-            sql = "INSERT INTO pictures VALUES '?,?,?,?,?,?,?,?,?'";
+            sql = "INSERT INTO pictures VALUES (?,?,?,?,?,?,?,?,?)";
+            stmt = con.prepareStatement(sql);
             stmt.setString(1, pic.getId());
             stmt.setString(2, pic.getName());
             stmt.setString(3, pic.getCountry());
@@ -27,22 +30,24 @@ public class PicDao {
             stmt.setString(7, pic.getLatitude());
             stmt.setString(8, pic.getAcquisition_time());
             stmt.setString(9, pic.getScale());
-            stmt = con.prepareStatement(sql);
-            stmt.executeUpdate();
+
+            //stmt.executeUpdate();
+            int cnt = stmt.executeUpdate();
+            System.out.println("Insert Success");
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Fail");
         }
     }
 
     public void deleteDao(String name) {
         String sql;
         PreparedStatement stmt = null;
-        Connection con = null;
+        Connection con = DBUtil.getCon();
         try {
             sql = "DELETE FROM pictures WHERE name=?";
             stmt = con.prepareStatement(sql);
             stmt.setString(1, name);
-            stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }

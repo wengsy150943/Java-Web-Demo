@@ -122,14 +122,13 @@
         %>
 
         <div>
-            <img src="../img/0.jpeg" width="300"/>
-            <li><%= pic.getId() %>
+            <img src="../images/<%= pic.getId() %>" width="300"/>
+            <li><%= pic.getName() %>
             </li>
             <%
                 if (((User) session.getAttribute("user")).isAdmin()) {
             %>
             <form>
-            <input type="text" value="<%= pic.getId()%>" style="display:none;">
             <input type="submit" action="" value="删除"class="submitButton" onclick="javascript:return del();" style="background-color:red;color:black;">
           </form>
             <%} %>
@@ -145,8 +144,6 @@
                 <div class="box">
                     <img src="../img/0.jpeg"/>
                     <ul>
-                        <li><%= pic.getId() %>
-                        </li>
                         <li><%= pic.getPosition() %>
                         </li>
                         <li><%= pic.getResolution() %>
