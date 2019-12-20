@@ -20,12 +20,11 @@ import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
 @WebServlet(name = "UploadServlet")
 public class UploadServlet extends HttpServlet {
+
 
     static String getPicName(String s) {
         Pattern p = Pattern.compile("(.*)(\\.)(png|jpg)", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
@@ -36,14 +35,11 @@ public class UploadServlet extends HttpServlet {
             return "1";
         }
     }
-
     //String realPath = getServletContext().getRealPath("/");
 
     PicDao picDao = new PicDao();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getSession().removeAttribute("uploadStatus");
-
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
@@ -102,9 +98,7 @@ public class UploadServlet extends HttpServlet {
                         pic.setId(calendar.getTime().toString());
                         //System.out.println(pic.toString());
                         picDao.insertDao(pic);
-                        request.getSession().setAttribute("uploadStatus", "上传成功！");
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + pic.getId() + "." + type;  //用户上传的文件名
-                        System.out.println(fileUpName);
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + calendar.toString() + type;  //用户上传的文件名
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
                             file.createNewFile();  //一开始肯定是没有的，所以先创建出来
