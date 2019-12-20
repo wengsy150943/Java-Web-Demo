@@ -32,7 +32,7 @@ public class Pic {
     @Override
     public String toString() {
         return "Pic{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +
                 ", position='" + position + '\'' +
@@ -43,6 +43,7 @@ public class Pic {
                 ", scale='" + scale + '\'' +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {

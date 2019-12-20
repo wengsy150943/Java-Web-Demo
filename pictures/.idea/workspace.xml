@@ -7,7 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/pictures/Fri Dec 20 21:00:52 CST 2019.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Fri Dec 20 21:07:46 CST 2019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Fri Dec 20 21:08:22 CST 2019.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Fri Dec 20 21:10:56 CST 2019.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/dao/PicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/dao/PicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/pojo/Pic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/pojo/Pic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/showUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/userInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pictures/dao/PicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/dao/PicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pojo/Pic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojo/Pic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/showUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/userInfo.jsp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +262,7 @@
       <workItem from="1576157567498" duration="7346000" />
       <workItem from="1576243674113" duration="977000" />
       <workItem from="1576663415137" duration="7000" />
-      <workItem from="1576836723599" duration="4153000" />
+      <workItem from="1576836723599" duration="7106000" />
     </task>
     <servers />
   </component>

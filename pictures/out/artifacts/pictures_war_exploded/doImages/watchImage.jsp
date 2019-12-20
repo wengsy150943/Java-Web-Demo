@@ -107,22 +107,29 @@
         <!-- 图片加载在这里-->
         <%
             PicDao picDao = new PicDao();
-            ArrayList<Pic> li = picDao.getAllPictures();
+            ArrayList<Pic> li = picDao.getPicturesByName(request.getParameter("key_word"));
 
             for (Pic pic : li) {
                 System.out.println(pic);
-                String name, country, position, resolution, scale;
+                String name, country, position, resolution, scale, longitude, latitude, acquisition_time;
                 name = request.getParameter("name");
-                System.out.println(name);
                 country = request.getParameter("country");
                 position = request.getParameter("position");
                 resolution = request.getParameter("resolution");
+                longitude = request.getParameter("longitude");
+                latitude = request.getParameter("latitude");
+                acquisition_time = request.getParameter("acquisition_time");
                 scale = request.getParameter("scale");
-                if (name != null && name != pic.getName()) continue;
-                if (country != null && country != pic.getCountry()) continue;
-                if (position != null && position != pic.getPosition()) continue;
-                if (resolution != null && resolution != pic.getResolution()) continue;
-                if (scale != null && scale != pic.getScale()) continue;
+
+                if (name != null && !name.equals("") && !name.equals(pic.getName())) continue;
+                if (country != null && !country.equals("") && !country.equals(pic.getCountry())) continue;
+                if (position != null && !position.equals("") && !position.equals(pic.getPosition())) continue;
+                if (resolution != null && !resolution.equals("") && !resolution.equals(pic.getResolution())) continue;
+                if (scale != null && !scale.equals("") && !scale.equals(pic.getScale())) continue;
+                if (acquisition_time != null && !acquisition_time.equals("") && !acquisition_time.equals(pic.getAcquisition_time()))
+                    continue;
+                if (latitude != null && !latitude.equals("") && !latitude.equals(pic.getLatitude())) continue;
+                if (longitude != null && !longitude.equals("") && !longitude.equals(pic.getLongitude())) continue;
         %>
 
         <div>
@@ -163,8 +170,8 @@
                         <%
                             if (((User) session.getAttribute("user")).isAdmin()) {
                         %>
-                        <form>
-                            <input type="text" value="<%= pic.getId()%>" style="display:none;">
+                        <form action="../servlet/DeleteServlet" method="POST">
+                            <input type="text" name="id" value="<%= pic.getId()%>" style="display:none;">
                             <input type="submit" action="" value="删除" class="submitButton"
                                    onclick="javascript:return del();" style="background-color:red;color:black;">
                         </form>

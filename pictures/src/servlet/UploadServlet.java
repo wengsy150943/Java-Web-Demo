@@ -63,28 +63,28 @@ public class UploadServlet extends HttpServlet {
 
                     if (fileItem.isFormField()) {
                         if (fileItem.getFieldName().equals("name")) {
-                            pic.setName(fileItem.getString("UTF8"));
+                            pic.setName(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("country")) {
-                            pic.setCountry(fileItem.getString());
+                            pic.setCountry(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("scale")) {
-                            pic.setScale(fileItem.getString());
+                            pic.setScale(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("position")) {
-                            pic.setPosition(fileItem.getString());
+                            pic.setPosition(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("latitude")) {
-                            pic.setLatitude(fileItem.getString());
+                            pic.setLatitude(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("longitude")) {
-                            pic.setLongitude(fileItem.getString());
+                            pic.setLongitude(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("acquisition_time")) {
-                            pic.setAcquisition_time(fileItem.getString());
+                            pic.setAcquisition_time(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                         if (fileItem.getFieldName().equals("resolution")) {
-                            pic.setResolution(fileItem.getString());
+                            pic.setResolution(new String(fileItem.getString().getBytes("ISO8859_1"), "utf-8"));
                         }
                     } else {
                         String type = getPicName(fileItem.getName());

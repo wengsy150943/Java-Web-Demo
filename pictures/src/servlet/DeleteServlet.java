@@ -15,8 +15,10 @@ public class DeleteServlet extends HttpServlet {
     PicDao picDao = new PicDao();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("name");
-        picDao.deleteDao(name);
+        String id = request.getParameter("id");
+        System.out.println(id);
+        picDao.deleteDao(id);
+        response.sendRedirect(request.getContextPath() + "/doImages/watchImage.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

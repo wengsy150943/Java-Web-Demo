@@ -40,14 +40,15 @@ public class PicDao {
         }
     }
 
-    public void deleteDao(String name) {
+    public void deleteDao(String id) {
+        System.out.println("delete:" + id);
         String sql;
         PreparedStatement stmt = null;
         Connection con = DBUtil.getCon();
         try {
-            sql = "DELETE FROM pictures WHERE name=?";
+            sql = "DELETE FROM pictures WHERE id=?";
             stmt = con.prepareStatement(sql);
-            stmt.setString(1, name);
+            stmt.setString(1, id);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -94,16 +95,18 @@ public class PicDao {
         }
     }
 
-    public ArrayList<Pic> getPicturesByCountry(String country) {
+    public ArrayList<Pic> getPicturesByName(String name) {
+        if (name == null) {
+            return getAllPictures();
+        }
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
         ArrayList<Pic> list = new ArrayList<Pic>();    //商品集合
         try {
             conn = DBUtil.getCon();
-            String sql = "SELECT * FROM pictures WHERE country=?;";
+            String sql = "SELECT * FROM pictures WHERE name like " + "'%%" + name + "%%'";
             stmt = conn.prepareStatement(sql);
-            stmt.setString(1, country);
             rs = stmt.executeQuery();
             while (rs.next()) {
                 Pic pic = new Pic();
