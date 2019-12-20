@@ -172,7 +172,7 @@
                         %>
                         <form action="../servlet/DeleteServlet" method="POST">
                             <input type="text" name="id" value="<%= pic.getId()%>" style="display:none;">
-                            <input type="submit" action="" value="删除" class="submitButton"
+                            <input type="submit" value="删除" class="submitButton"
                                    onclick="javascript:return del();" style="background-color:red;color:black;">
                         </form>
                         <%} %>

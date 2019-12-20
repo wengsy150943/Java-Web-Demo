@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/mainpage.js"></script>
     <script language="JavaScript" src="../js/jquery.js"></script>
-    <script type="taext/javascript">
+    <script type="text/javascript">
         $(function () {
             $("img").click(function () {
                 var $tar = $(this).next("");
@@ -172,8 +172,8 @@
                         %>
                         <form action="../servlet/DeleteServlet" method="POST">
                             <input type="text" name="id" value="<%= pic.getId()%>" style="display:none;">
-                            <input type="submit" action="" value="删除"
-                                  >
+                            <input type="submit" value="删除" class="submitButton"
+                                   onclick="javascript:return del();" style="background-color:red;color:black;">
                         </form>
                         <%} %>
                     </ul>

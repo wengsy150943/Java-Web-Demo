@@ -45,13 +45,13 @@ public class UploadServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
-        boolean isMultipart = ServletFileUpload.isMultipartContent(request);  //enctype属性是否是multipart/form-data
+        boolean isMultipart = ServletFileUpload.isMultipartContent(request);
         PrintWriter writer = response.getWriter();
-        String userName = "";  //上传者
-        StringBuffer fileStr = new StringBuffer();  //上传的文件名，最后输出用
+        String userName = "";
+        StringBuffer fileStr = new StringBuffer();
         try {
             if (isMultipart) {
-                DiskFileItemFactory factory = new DiskFileItemFactory();  //工厂实例
+                DiskFileItemFactory factory = new DiskFileItemFactory();
                 ServletFileUpload upload = new ServletFileUpload(factory);
                 //ServletFileUpload实例依赖于FileItemFactory工厂
                 @SuppressWarnings("unchecked")
@@ -97,13 +97,11 @@ public class UploadServlet extends HttpServlet {
                         Calendar calendar = Calendar.getInstance();
                         String id = calendar.getTime().toString() + "." + type;
                         pic.setId(id);
-                        //System.out.println(pic.toString());
                         picDao.insertDao(pic);
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "../../../web/pictures/" + id;  //用户上传的文件名
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "../../../web/pictures/" + id;
                         System.out.println(fileUpName);
-                        File file = new File(fileUpName);  //要保存到的文件
-
-                        fileItem.write(file);  //写入，保存到目标文件
+                        File file = new File(fileUpName);
+                        fileItem.write(file);
                         System.out.println("写入成功");
                     }
                 }
