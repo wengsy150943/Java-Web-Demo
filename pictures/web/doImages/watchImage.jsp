@@ -109,18 +109,20 @@
             PicDao picDao = new PicDao();
             ArrayList<Pic> li = picDao.getAllPictures();
 
-            for (Pic pic : li) {System.out.println(pic);
+            for (Pic pic : li) {
+                System.out.println(pic);
                 String name, country, position, resolution, scale;
                 name = request.getParameter("name");
+                System.out.println(name);
                 country = request.getParameter("country");
                 position = request.getParameter("position");
                 resolution = request.getParameter("resolution");
                 scale = request.getParameter("scale");
-                if (name != "" && name != pic.getName()) continue;
-                if (country != "" && country != pic.getCountry()) continue;
-                if (position != "" && position != pic.getPosition()) continue;
-                if (resolution != "" && resolution != pic.getResolution()) continue;
-                if (scale != "" && scale != pic.getScale()) continue;
+                if (name != null && name != pic.getName()) continue;
+                if (country != null && country != pic.getCountry()) continue;
+                if (position != null && position != pic.getPosition()) continue;
+                if (resolution != null && resolution != pic.getResolution()) continue;
+                if (scale != null && scale != pic.getScale()) continue;
         %>
 
         <div>
