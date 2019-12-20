@@ -62,7 +62,6 @@ public class UploadServlet extends HttpServlet {
                     FileItem fileItem = iterator.next();
 
                     if (fileItem.isFormField()) {
-                        System.out.println(fileItem.getFieldName());
                         if (fileItem.getFieldName().equals("name")) {
                             pic.setName(fileItem.getString("UTF8"));
                         }
@@ -89,7 +88,6 @@ public class UploadServlet extends HttpServlet {
                         }
                     } else {
                         String type = getPicName(fileItem.getName());
-                        //System.out.println(type);
                         if (type.equals("1")) {
                             System.out.println("文件类型必须为jpg、png");
                             request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
@@ -104,11 +102,9 @@ public class UploadServlet extends HttpServlet {
                         String fileUpName = request.getSession().getServletContext().getRealPath("") + "../../../web/pictures/" + id;  //用户上传的文件名
                         System.out.println(fileUpName);
                         File file = new File(fileUpName);  //要保存到的文件
-                        if (!file.exists()) {
-                            System.out.println("222");
-                            file.createNewFile();  //一开始肯定是没有的，所以先创建出来
-                        }
+
                         fileItem.write(file);  //写入，保存到目标文件
+                        System.out.println("写入成功");
                     }
                 }
                 response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");

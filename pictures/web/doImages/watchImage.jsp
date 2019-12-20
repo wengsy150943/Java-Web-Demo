@@ -107,8 +107,9 @@
         <!-- 图片加载在这里-->
         <%
             PicDao picDao = new PicDao();
-            ArrayList<Pic> li = (ArrayList<Pic>) picDao.getPicturesByCountry(request.getParameter("key_word"));
-            for (Pic pic : li) {
+            ArrayList<Pic> li = picDao.getAllPictures();
+
+            for (Pic pic : li) {System.out.println(pic);
                 String name, country, position, resolution, scale;
                 name = request.getParameter("name");
                 country = request.getParameter("country");
@@ -123,7 +124,7 @@
         %>
 
         <div>
-            <img src="../images/<%= pic.getId() %>" width="300"/>
+            <img src="../pictures/<%= pic.getId() %>" width="300"/>
             <li><%= pic.getName() %>
             </li>
             <%
