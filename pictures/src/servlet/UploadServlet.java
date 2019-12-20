@@ -20,6 +20,8 @@ import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 @WebServlet(name = "UploadServlet")
@@ -92,15 +94,18 @@ public class UploadServlet extends HttpServlet {
                             System.out.println("文件类型必须为jpg、png");
                             request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
-                            return ;
+                            return;
                         }
                         Calendar calendar = Calendar.getInstance();
-                        pic.setId(calendar.getTime().toString());
+                        String id = calendar.getTime().toString() + "." + type;
+                        pic.setId(id);
                         //System.out.println(pic.toString());
                         picDao.insertDao(pic);
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "/../../../web/pictures/" + calendar.toString() + type;  //用户上传的文件名
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "../../../web/pictures/" + id;  //用户上传的文件名
+                        System.out.println(fileUpName);
                         File file = new File(fileUpName);  //要保存到的文件
                         if (!file.exists()) {
+                            System.out.println("222");
                             file.createNewFile();  //一开始肯定是没有的，所以先创建出来
                         }
                         fileItem.write(file);  //写入，保存到目标文件
