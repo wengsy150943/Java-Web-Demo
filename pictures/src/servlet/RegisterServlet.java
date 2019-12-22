@@ -18,7 +18,6 @@ public class RegisterServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getSession().removeAttribute("status");
-        System.out.println("sex:" + request.getParameter("sex"));
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         boolean success = userDao.registerDao(username, password);

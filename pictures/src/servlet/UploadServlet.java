@@ -102,7 +102,7 @@ public class UploadServlet extends HttpServlet {
                         String id = calendar.getTime().toString() + integer + "." + type;
                         pic.setId(id);
                         picDao.insertDao(pic);
-                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "../../../web/pictures/" + id;
+                        String fileUpName = request.getSession().getServletContext().getRealPath("") + "pictures/" + id;
                         System.out.println(fileUpName);
                         File file = new File(fileUpName);
                         fileItem.write(file);

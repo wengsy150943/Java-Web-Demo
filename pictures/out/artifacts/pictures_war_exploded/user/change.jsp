@@ -27,14 +27,18 @@
 
             <form class="loginForm" action="../servlet/ChangePasswordServlet" method="post">
 
+                <div class="group" style="display:none;">
+                    <input  name="username" type="text" value=${curUsername}>
+                </div>
+
                 <div class="group">
-                    <label for="old-password" class="label" id="passwordLabel">输入原密码</label>
+                    <label for="old-password" class="label" >输入原密码</label>
                     <input id="old-password" name="oldPassword" type="password" class="input" data-type="password"
                            required="" minlength="6">
                 </div>
 
                 <div class="group">
-                    <label for="password" class="label" id="passwordLabel">输入新密码</label>
+                    <label for="password" class="label" >输入新密码</label>
                     <input id="password" name="newPassword" type="password" class="input" data-type="password"
                            required=""
                            minlength="6">

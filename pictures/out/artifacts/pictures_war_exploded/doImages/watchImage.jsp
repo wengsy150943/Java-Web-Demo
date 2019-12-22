@@ -133,7 +133,7 @@
         %>
 
         <div>
-            <img src="../pictures/<%= pic.getId() %>" width="300"/>
+            <img src="../pictures/<%= pic.getId() %>" width="300" style="background: rgba(0,0,0,.7);padding: 10px 10px;"/>
             <li><%= pic.getName() %>
             </li>
             <%

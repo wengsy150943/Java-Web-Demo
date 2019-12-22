@@ -7,17 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019-1608045253.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019-574284313.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 20191350829586.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 20191892672251.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019961608925.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pictures_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pictures_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/10185101261_lab6_徐天舒.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/RegisterServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 14:56:19 CST 2019-1608045253.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 14:56:19 CST 2019-574284313.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 14:56:19 CST 20191350829586.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 14:56:19 CST 20191892672251.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 14:56:19 CST 2019961608925.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 15:05:22 CST 2019-1410659044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 15:05:22 CST 2019-1498011934.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 15:05:22 CST 2019-1499370865.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 15:05:22 CST 2019-47947768.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 15:05:22 CST 2019-876219091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/Sun Dec 22 15:05:22 CST 2019779332617.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/屏幕快照 2019-11-24 00.17.01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/pictures/计算机网络实验报告模版.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/change.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/user/change.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/RegisterServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/RegisterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/doImages/addImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doImages/addImage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/main/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019-1608045253.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019-574284313.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 20191350829586.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 20191892672251.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019961608925.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 15:05:22 CST 2019-1410659044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 15:05:22 CST 2019-1498011934.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 15:05:22 CST 2019-1499370865.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 15:05:22 CST 2019-47947768.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 15:05:22 CST 2019-876219091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pictures/Sun Dec 22 15:05:22 CST 2019779332617.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/change.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/change.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,10 +145,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40804598" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,6 +192,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="pictures:war exploded">
           <settings>
@@ -181,6 +209,9 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54042" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -233,6 +264,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.PicDao" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -274,7 +309,7 @@
       <workItem from="1576243674113" duration="977000" />
       <workItem from="1576663415137" duration="7000" />
       <workItem from="1576836723599" duration="9782000" />
-      <workItem from="1576995406359" duration="2817000" />
+      <workItem from="1576995406359" duration="5422000" />
     </task>
     <servers />
   </component>

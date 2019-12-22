@@ -25,40 +25,7 @@
         <div class="loginHtml">
 
 
-            <form class="loginForm" action="../servlet/ChangePasswordServlet" method="post">
-
-                <div class="group">
-                    <label for="old-password" class="label" id="passwordLabel">输入原密码</label>
-                    <input id="old-password" name="oldPassword" type="password" class="input" data-type="password"
-                           required="" minlength="6">
-                </div>
-
-                <div class="group">
-                    <label for="password" class="label" id="passwordLabel">输入新密码</label>
-                    <input id="password" name="newPassword" type="password" class="input" data-type="password"
-                           required=""
-                           minlength="6">
-                </div>
-
-
-                <div class="group">
-                    <label for="password-confirm" class="label">重复新密码</label>
-                    <input id="password-confirm" name="password-confirm" type="password" class="input"
-                           data-type="password" required="" minlength="6" onblur="checkPasswd();">
-                </div>
-                <div id="repeat-passwd-notice" style="display:none;height:20px;width:200px;color:red;font-size:10px;">
-                    请输入相同的密码！
-                </div>
-
-                <div id="status" style="height:20px;width:200px;color:red;font-size:10px;">
-                    ${status }
-                </div>
-
-
-                <div class="group">
-                    <input type="submit" class="button" value="Sign Up">
-                </div>
-            </form>
+            <form class="loginForm" action="../servlet/ChangePasswordServlet" method="post">¨¨</form>
         </div>
     </div>
 </div>
