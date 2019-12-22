@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="group">
-                    <label for="old-password" class="label" >输入原密码</label>
+                    <label for="old-password" class="label">输入原密码</label>
                     <input id="old-password" name="oldPassword" type="password" class="input" data-type="password"
                            required="" minlength="6">
                 </div>
@@ -60,7 +60,7 @@
 
 
                 <div class="group">
-                    <input type="submit" class="button" value="Sign Up">
+                    <input type="submit" class="button" value="修改密码">
                 </div>
             </form>
         </div>

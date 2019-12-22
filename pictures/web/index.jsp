@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="group">
-                    <input type="submit" class="button" value="Sign In">
+                    <input type="submit" class="button" value="Sign in">
                 </div>
 
         </form>

@@ -12,6 +12,7 @@
 
 
     <div class="loginHtml">
+        <label class="sign-up tab"><a href="../index.jsp">登陆</a></label>
         <label class="sign-up tab">注册</label>
 
 
