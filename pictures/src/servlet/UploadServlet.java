@@ -20,6 +20,7 @@ import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -92,12 +93,13 @@ public class UploadServlet extends HttpServlet {
                         if (type.equals("1")) {
                             request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             System.out.println("文件类型必须为jpg、png");
-                            request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
                             return;
                         }
+                        Random random = new Random();
+                        Integer integer = random.nextInt();
                         Calendar calendar = Calendar.getInstance();
-                        String id = calendar.getTime().toString() + "." + type;
+                        String id = calendar.getTime().toString() + integer + "." + type;
                         pic.setId(id);
                         picDao.insertDao(pic);
                         String fileUpName = request.getSession().getServletContext().getRealPath("") + "../../../web/pictures/" + id;

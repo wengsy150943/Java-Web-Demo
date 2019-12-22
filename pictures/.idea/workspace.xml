@@ -7,15 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33f0c863-6d34-4e9f-9e8b-d85dcc58737b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:18:54 CST 2019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:19:41 CST 2019.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019-1608045253.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019-574284313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 20191350829586.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 20191892672251.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pictures/Sun Dec 22 14:56:19 CST 2019961608925.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pictures_war_exploded/WEB-INF/classes/servlet/UploadServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pictures/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/PicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PicDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/UploadServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/doImages/addImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doImages/addImage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/doImages/watchImage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/doImages/watchImage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main/top.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -272,7 +274,7 @@
       <workItem from="1576243674113" duration="977000" />
       <workItem from="1576663415137" duration="7000" />
       <workItem from="1576836723599" duration="9782000" />
-      <workItem from="1576995406359" duration="1905000" />
+      <workItem from="1576995406359" duration="2817000" />
     </task>
     <servers />
   </component>
@@ -294,5 +296,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pictures$Tomcat_9_0_27.ic" NAME="Tomcat 9.0.27 Coverage Results" MODIFIED="1576997434783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
