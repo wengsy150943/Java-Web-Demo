@@ -18,7 +18,7 @@ public class PicDao {
         PreparedStatement stmt = null;
         Connection con = DBUtil.getCon();
         System.out.println("Connection Success");
-        try {
+            try {
             sql = "INSERT INTO pictures VALUES (?,?,?,?,?,?,?,?,?)";
             stmt = con.prepareStatement(sql);
             stmt.setString(1, pic.getId());
@@ -49,6 +49,8 @@ public class PicDao {
             sql = "DELETE FROM pictures WHERE id=?";
             stmt = con.prepareStatement(sql);
             stmt.setString(1, id);
+            System.out.println(sql);
+            stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }

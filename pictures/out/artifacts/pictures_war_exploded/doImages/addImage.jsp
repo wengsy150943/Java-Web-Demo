@@ -1,9 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     request.setCharacterEncoding("UTF-8");
+    request.getSession().removeAttribute("uploadStatus");
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
+
+
 
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -68,7 +71,9 @@
         <tr>
             <td class="controler"><input type="text" name="acquisition_time"></td>
             <td class="controler"><input type="text" name="scale"></td>
-            <td class="controler"><input type="file" name="filename" multiple/></td>
+            <td class="controler"><input type="file" name="filename" multiple/>
+                <div style="color:red;"> ${uploadStatus}</div>
+            </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
@@ -77,7 +82,6 @@
             </td>
         </tr>
     </table>
-    <div> ${uploadStatus}</div>
 </form>
 </body>
 </html>

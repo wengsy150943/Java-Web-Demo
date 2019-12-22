@@ -139,9 +139,10 @@
             <%
                 if (((User) session.getAttribute("user")).isAdmin()) {
             %>
-            <form>
-                <input type="submit" action="" value="删除" class="submitButton" onclick="javascript:return del();"
-                       style="background-color:red;color:black;">
+            <form action="../servlet/DeleteServlet" method="POST" style="float:left;">
+                <input type="text" name="id" value="<%= pic.getId()%>" style="display:none;">
+                <input type="submit" value="删除" class="button"
+                       onclick="del()" style="color:red;">
             </form>
             <%} %>
             <div class="fullSrceen" style="top:0;
@@ -149,31 +150,35 @@
             width:100%;
             height:100%;
             position: fixed;
+            overflow:auto;
             z-index: 5500;
             background-color: rgba(10,10,10,.5);
             display:none;
             text-align:center;">
                 <div class="box">
-                    <img src="../img/0.jpeg"/>
+                    <img src="../pictures/<%= pic.getId() %>"/>
                     <ul>
-                        <li><%= pic.getPosition() %>
+                        <li>国家：<%= pic.getCountry() %>
                         </li>
-                        <li><%= pic.getResolution() %>
+                        <li>位置：<%= pic.getPosition() %>
                         </li>
-                        <li><%= pic.getLatitude() %>
+                        <li>分辨率：<%= pic.getResolution() %>
                         </li>
-                        <li><%= pic.getAcquisition_time() %>
+                        <li>经度：<%= pic.getLongitude() %>
                         </li>
-                        <li><%= pic.getScale() %>
+                        <li>纬度：<%= pic.getLatitude() %>
                         </li>
-                        <button class="button">退出</button>
+                        <li>上传时间：<%= pic.getAcquisition_time() %>
+                        </li>
+
+                        <button class="button" style="float:left;">退出</button>
                         <%
                             if (((User) session.getAttribute("user")).isAdmin()) {
                         %>
-                        <form action="../servlet/DeleteServlet" method="POST">
+                        <form action="../servlet/DeleteServlet" method="POST" style="float:left;">
                             <input type="text" name="id" value="<%= pic.getId()%>" style="display:none;">
-                            <input type="submit" value="删除" class="submitButton"
-                                   onclick="javascript:return del();" style="background-color:red;color:black;">
+                            <input type="submit" value="删除" class="button"
+                                   onclick="del()" style="color:red;">
                         </form>
                         <%} %>
                     </ul>

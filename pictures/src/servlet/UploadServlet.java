@@ -42,6 +42,7 @@ public class UploadServlet extends HttpServlet {
     PicDao picDao = new PicDao();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession().removeAttribute("uploadStatus");
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
@@ -89,6 +90,7 @@ public class UploadServlet extends HttpServlet {
                     } else {
                         String type = getPicName(fileItem.getName());
                         if (type.equals("1")) {
+                            request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             System.out.println("文件类型必须为jpg、png");
                             request.getSession().setAttribute("uploadStatus", "文件类型必须为jpg、png");
                             response.sendRedirect(request.getContextPath() + "/doImages/addImage.jsp");
